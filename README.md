@@ -8,7 +8,7 @@ Semantic elements like header, nav, section and footer have been used.
 
 Properties like display flex and flex wrap are applied to the HTML elements.
 
-To obtain the parallax effect background properties like background-position, position: fixed, are applied to the background images.
+To obtain the parallax effect background properties like background-position, position: relative, background attachment etc... are applied to the background images.
 
 Bootstrap container, grid and many contextual classes are used to different elements of HTML.
 
