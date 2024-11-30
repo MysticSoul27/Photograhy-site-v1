@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallax1{
+    background-image: url("./images/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.parallax2{
+    background-image: url("./images/bg-photo-7-removebg-preview.png");
+    min-height: 60vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.parallax3{
+    background-image: url("./images/bg-gallery.jpg");
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4{
+    background-image: url("./images/bg-blog.jpeg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.parallax5{
+    background-image: url("./images/bg-service1.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.parallax6{
+    background-image: url("./images/bg-photo-places.jpg");
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.parallax7{
+    background-image: url("./images/bg-photo-customer.jpg");
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax8{
+    background-image: url("./images/bg-photo-contact.jpg");
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.parallax2,.parallax3,.parallax4,.parallax5,.parallax6,.parallax7,.parallax8{
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+.heading-parallax{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    font-size: 250%;
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-family: "Barrio", serif;
+
+}
+.account a {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+/* Hover effect with underline animation */
+.account a:hover {
+    color: rgb(16, 56, 102);
+}
+/* Pseudo-element for the underline animation */
+.account a::before{
+    content: '';
+    position: absolute;
+    left: 50%; /* Start from the center */
+    bottom: -2px;
+    width: 0;
+    height: 3px; /* Corrected height unit */
+    background-color: rgb(16, 56, 102);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+/* On hover, expand the line from center to edges */
+.account a:hover::before {
+    width: 65%;
+    left: 0;
+    transform: translateX(45%);
+}
+.nav-contents{
+    font-family: "Barrio", serif;
+    font-weight: 700;
+}
+/* Add relative positioning to nav-link */
+.nav-link {
+    position: relative;
+}
+
+/* Add the line animation effect */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Start from the center */
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background-color: rgb(4, 4, 4);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+/* On hover, expand the line from center to edges */
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
+/* Active link color */
+a.active {
+    color: rgb(86, 14, 144) !important;
+}
+.fixed-underline::before {
+    width: 100%; /* Keep it fully visible */
+    left: 0;
+    transform: translateX(0);
+}
+.head-para{
+    font-family: "Cormorant Upright", serif;
+    color: rgb(117, 88, 98);
+    margin-top: 4rem;
+}
+/* .about,.blog,.gallery,.service,.customer,.places,.contact,.footer{
+    margin-top: 8rem;
+} */
+.about,.customer{
+    background-color: rgb(143, 179, 158);
+    width: 100%;
+}
+.about-heading{
+    text-align: center;
+    font-family: "Yellowtail", serif;
+}
+.about-para,.customer p,.places p,form{
+    font-family: "PT Sans", serif;
+    color: rgb(46, 45, 45);
+    font-weight: 500;
+}
+.about-para div a,.customer div a{
+    font-family: "Barrio", serif !important;
+    text-underline-offset: 10px !important;
+}
+.about-para div span:hover{
+    color: white;
+    cursor: pointer;
+}
+.gallery h1,.blog h1,.service h1,.customer h1,.places h1,.contact-head{
+    font-family: "Yellowtail", serif;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.gallery div a,.blog div a,.service div{
+    font-family: "Barrio", serif;
+    text-underline-offset: 10px;
+}
+.gallery div span:hover{
+    color: white;
+}
+.gallery p,.blog p{
+    font-family: "Exo 2", serif;
+    color: rgb(169, 156, 156);
+    font-size: 15px;
+    
+}
+.card-body,.card-title,.card-text,.table,.places div h3,.footer-link{
+    font-family: "Cormorant Upright", serif !important;
+}
+.service{
+    background-color: rgb(175, 169, 166);
+}
+.footer{
+    background-color: rgb(164, 125, 109);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.service-para{
+    font-family: "Exo 2", serif;
+    font-size: 14px;
+}
+.bb{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Cormorant Upright", serif;
+}
+.table tr td{
+    font-size: 18px;
+}
+.places div button,.footer-para{
+    font-family: "Barrio", serif;
+}
+.contact-para,.places p{
+    font-family: "Exo 2", serif;
+    font-size: 13px;
+    color: rgb(69, 69, 69);
+}
+.contact-link{
+    font-family: "Exo 2", serif;
+    text-underline-offset: 3px;
+}
+form div{
+    width: 50%;
+}
+.form-control{
+    border: none !important;
+    border-bottom: 2px solid black !important;
+}
+.form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+@media (max-width:700px){
+    .header-img{
+        flex-wrap: wrap;
+    }
+    .gallery div{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:578px) and (max-width:1220px){
+    .nav-contents ul{
+         width: 100% !important;  
+    }
+}
+
+@media (max-width:578px){
+    .about{
+        height: 1000px !important;
+    }
+    .gallery div{
+        flex-wrap: wrap;
+    }
+    #contact-img{
+        justify-content: center;
+        align-items: center !important;
+    }
+    form div{
+        width: 100% !important;
+    }
+}
+@media (max-width:245px){
+    .about-heading{
+        font-size: 12px !important;
+    }
+    .about-para{
+        font-size: 12px !important;
+    }
+    
+}
